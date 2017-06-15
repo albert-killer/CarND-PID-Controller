@@ -7,7 +7,7 @@ The goal of this project was to implement a proportional–integral–derivative
 
 The  and use at for creating steering angle
 
-![Evaluating results using Udacity's Term 2 Simulator](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/PID.svg/640px-PID.svg.png)
+![PID Controller](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/PID.svg/640px-PID.svg.png "A block diagram of a PID controller in a feedback loop. r(t) is the desired process value or "set point", and y(t) is the measured process value")
 
 
 PID advantages:
