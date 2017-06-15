@@ -3,7 +3,7 @@
 
 This is the project repository for **Project No. 4 PID Controller**, part of Term 2 _Sensor Fusion_ of Udacity Self-Driving Car Nanodegree program, submitted by Albert Killer in June 2017. 
 
-The goal of this project was to implement a proportional–integral–derivative controller (PID controller) in C++. Via *uWebSockets* an interface was set up to communicate with Udacity's *Term 2 Simulator*. Speed and Cross Track Error (CTE) are provided by the simulator, the latter describing the distance of the vehicle to a reference value, in this case the center of the road. The controller is defined by following feedback loop:
+The goal of this project was to implement a proportional–integral–derivative controller (PID controller) in C++. Via *uWebSockets* an interface was set up to communicate with Udacity's *Term 2 Simulator*. Speed and cross track error (CTE) are provided by the simulator, the latter describing the distance of the vehicle to a reference value, in this case the center of the road. The controller is defined by following feedback loop:
 
 ![PID Controller](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/PID.svg/640px-PID.svg.png "A block diagram of a PID controller in a feedback loop")
 
@@ -18,8 +18,8 @@ control variable is finally computed like this (pseudo code):
 The PID controller concept consists of following terms:
 
 * __p for proportional term__: how hard to pull back to the center, error directly defined by current CTE
-* __i for integral term__: how consistantly the car should be pulling back to the center, error defined the sum of all crosstrack errors observed
-* __d for differential term__: how smooth the car should approach target trajectory, error defined by differenc between current and previous CTE
+* __i for integral term__: how consistantly the car should be pulling back to the center, error defined by the sum of all crosstrack errors observed
+* __d for differential term__: how smooth the car should approach target trajectory, error defined by difference between current and previous CTE
 
 The PID controller is one of many controllers available to effectively manipulate the steering of a self-driving car, providing the following advantages and disadvantages.  
 
