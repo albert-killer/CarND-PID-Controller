@@ -9,7 +9,7 @@ The goal of this project was to implement a proportional–integral–derivative
 
 On every new input value of CTE the PID controller updates respective errors, which determine the effect of the initially set up coefficients of the controller *Kp*, *Ki* and *Kd*. These coefficients have to be optimized for the application by either tuning them manually or applying a gradient decent method (aka *twiddle*) to investigate the optimal parameter values.   
 
-control variable is finally computed like this: 
+control variable is finally computed like this (pseudo code): 
 
 ```
  steering value = Kp * p_error + Ki * i_error + Kd * d_error
