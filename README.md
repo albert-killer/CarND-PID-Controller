@@ -1,2 +1,9 @@
 # CarND-PID-Controller
-Set up a PID controller which computes the steering angle of a simulated vehicle in order to keep it on track, given CTE and velocity 
+
+PID advantages:
+* Low computational cost which is interessting particularly for a limited computation embedded environment like on a self-driving car
+* Easy to program
+
+PID disadvantages:
+* Less intuitive concept than other controllers
+* Hyper parameter tuning by hand or by decent gradient if possible
