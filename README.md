@@ -7,7 +7,7 @@ The goal of this project was to implement a proportional–integral–derivative
 
 ![PID Controller](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/PID.svg/640px-PID.svg.png "A block diagram of a PID controller in a feedback loop")
 
-On every new input value of CTE the PID controller updates respective errors, which determine the effect of the initially set up coefficients of the controller *Kp*, *Ki* and *Kd*. These coefficients have to be optimized for the application by either tuning them manually or applying a gradient decent method (aka *twiddle*) to investigate the optimal parameter values.   
+On every new input value of CTE the PID controller updates respective errors, which determine the effect of the initially set up coefficients of the controller *Kp*, *Ki* and *Kd*. These coefficients have to be optimized for the application by either tuning them manually or applying the *gradient decent* method (aka *Twiddle Algorithm*) to investigate the optimal parameter values.   
 
 control variable is finally computed like this (pseudo code): 
 
@@ -29,6 +29,6 @@ __PID advantages__:
 
 __PID disadvantages__:
 * Less intuitive concept than other controllers
-* Hyper parameter tuning by hand or by decent gradient if possible
+* Hyper parameter tuning by hand or by *gradient decent* if possible
 
 Want to know more about PID Controllers? Have a look at this one: https://en.wikipedia.org/wiki/PID_controller
